@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Stopwatch for Excel",
+  "description": "Adds a stopwatch to Excel.",
+  "version": "1.0",
+  "icons": {
+    "48": "timer48.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.sharepoint.com/:x:*"],
+      "js": ["excel-stopwatch.js"]
+    }
+  ]
+}
+
